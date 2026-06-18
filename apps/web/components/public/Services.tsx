@@ -75,7 +75,7 @@ function ServiceCard({ service, index }: { service: typeof SERVICES[0]; index: n
       ref={ref}
       initial={{ opacity: 0, y: 40 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.6, delay: index * 0.1, ease: [0.25, 0.46, 0.45, 0.94] }}
+      transition={{ duration: 0.6, delay: index * 0.1, ease: [0.25, 0.46, 0.45, 0.94] as [number, number, number, number] }}
       className={`group relative overflow-hidden rounded-2xl border border-white/8 bg-linear-to-br ${service.color} p-6 backdrop-blur-sm transition-all duration-400 hover:scale-[1.02] hover:shadow-xl ${service.border} ${service.glow}`}
     >
       {service.tag && (

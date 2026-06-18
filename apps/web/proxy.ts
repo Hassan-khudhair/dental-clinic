@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
-export function middleware(req: NextRequest) {
+export function proxy(req: NextRequest) {
   // Better Auth sets this cookie on successful sign-in via the NestJS API
   const session = req.cookies.get('better-auth.session_token')?.value;
   const isLoginPage = req.nextUrl.pathname.includes('/login');
