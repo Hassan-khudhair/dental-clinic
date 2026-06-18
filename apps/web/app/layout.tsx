@@ -15,6 +15,11 @@ export const metadata: Metadata = {
     default: 'د. حيدر | متخصص علاج جذور الأسنان',
   },
   description: 'عيادة د. حيدر — متخصص في علاج جذور الأسنان في البصرة، الزبير',
+  icons: {
+    icon: '/icon.svg',
+    shortcut: '/icon.svg',
+    apple: '/icon.svg',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
