@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --color-teal: #2A6B74;
+  --color-teal-light: #3D8D98;
+  --color-gold: #C4933A;
+  --color-gold-light: #E8C97A;
+  --color-ivory: #F8F5F0;
+  --color-clinic-dark: #1A1410;
+  --color-clinic-muted: #7A7068;
+
+  --font-cairo: "Cairo", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-cairo), sans-serif;
+  background-color: #ffffff;
+  color: #1A1410;
+}
