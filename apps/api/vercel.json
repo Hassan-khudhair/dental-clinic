@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "installCommand": "cd ../.. && pnpm install --no-frozen-lockfile && cd apps/api && npx prisma generate",
+  "installCommand": "pnpm install && npx prisma generate",
   "buildCommand": "nest build",
   "functions": {
     "api/index.ts": {
