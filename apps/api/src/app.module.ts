@@ -8,6 +8,7 @@ import { ReservationsModule } from './reservations/reservations.module';
 import { PatientsModule } from './patients/patients.module';
 import { TreatmentsModule } from './treatments/treatments.module';
 import { StatsModule } from './stats/stats.module';
+import { SetupModule } from './setup/setup.module';
 
 @Module({
   imports: [
@@ -18,6 +19,7 @@ import { StatsModule } from './stats/stats.module';
     PatientsModule,
     TreatmentsModule,
     StatsModule,
+    SetupModule,
   ],
   providers: [
     {

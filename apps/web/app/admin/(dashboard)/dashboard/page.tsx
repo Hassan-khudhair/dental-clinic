@@ -1,6 +1,5 @@
 'use client';
 
-import type { Metadata } from 'next';
 import StatsCard from '@/components/admin/StatsCard';
 import StatusBadge from '@/components/admin/StatusBadge';
 import { useStats } from '@/hooks/useStats';

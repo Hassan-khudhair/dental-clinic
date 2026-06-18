@@ -1,11 +1,9 @@
 'use client';
 
 import { useState, FormEvent } from 'react';
-import { useRouter } from 'next/navigation';
 import { authClient } from '@/lib/auth';
 
 export default function LoginPage() {
-  const router = useRouter();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -16,18 +14,15 @@ export default function LoginPage() {
     setError('');
     setLoading(true);
     try {
-      const { error: authError } = await authClient.signIn.email({
-        email,
-        password,
-        fetchOptions: { credentials: 'include' },
-      });
+      const { error: authError } = await authClient.signIn.email({ email, password });
       if (authError) {
         setError('بريد إلكتروني أو كلمة مرور غير صحيحة');
         return;
       }
-      router.push('/admin/dashboard');
+      // Full page reload so the Next.js middleware sees the new session cookie
+      window.location.href = '/admin/dashboard';
     } catch {
-      setError('حدث خطأ أثناء تسجيل الدخول');
+      setError('حدث خطأ أثناء تسجيل الدخول، تأكد من تشغيل الخادم');
     } finally {
       setLoading(false);
     }
@@ -52,6 +47,7 @@ export default function LoginPage() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
+              autoComplete="email"
               className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-right focus:border-teal focus:outline-none focus:ring-2 focus:ring-teal/20"
               placeholder="admin@clinic.com"
             />
@@ -64,6 +60,7 @@ export default function LoginPage() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
+              autoComplete="current-password"
               className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-right focus:border-teal focus:outline-none focus:ring-2 focus:ring-teal/20"
               placeholder="••••••••"
             />

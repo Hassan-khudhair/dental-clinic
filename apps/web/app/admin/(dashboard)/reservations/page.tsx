@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import StatusBadge from '@/components/admin/StatusBadge';
 import ReservationsTable from '@/components/admin/ReservationsTable';
 import { useReservations } from '@/hooks/useReservations';
 import type { ReservationStatus } from '@clinic/types';
@@ -29,7 +28,7 @@ export default function ReservationsPage() {
         </span>
       </div>
 
-      <div className="flex gap-2 flex-wrap">
+      <div className="flex flex-wrap gap-2">
         {FILTERS.map((f) => (
           <button
             key={f.value}
@@ -37,7 +36,7 @@ export default function ReservationsPage() {
             className={`rounded-full px-4 py-1.5 text-sm font-semibold transition-colors ${
               activeFilter === f.value
                 ? 'bg-teal text-white'
-                : 'bg-white border border-gray-200 text-clinic-muted hover:border-teal hover:text-teal'
+                : 'border border-gray-200 bg-white text-clinic-muted hover:border-teal hover:text-teal'
             }`}
           >
             {f.label}
