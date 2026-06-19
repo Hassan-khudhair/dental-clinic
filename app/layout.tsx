@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     template: '%s | د. حيدر — متخصص علاج الجذور',
     default: 'د. حيدر | متخصص علاج جذور الأسنان',
   },
-  description: 'عيادة د. حيدر — متخصص في علاج جذور الأسنان في البصرة، الزبير',
+  description: 'عيادة د. حيدر — متخصص في علاج جذور الأسنان في ذي قار الناصرية',
   icons: {
     icon: '/icon.svg',
     shortcut: '/icon.svg',

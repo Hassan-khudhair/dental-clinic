@@ -48,7 +48,7 @@ export default function Hero() {
           <motion.div variants={item}>
             <span className="glass inline-flex items-center gap-2 rounded-full px-5 py-2 text-sm font-semibold text-teal-light">
               <span className="h-2 w-2 rounded-full bg-teal animate-pulse-glow" />
-              متخصص معتمد · البصرة — الزبير
+              متخصص معتمد · ذي قار — الناصرية
             </span>
           </motion.div>
 

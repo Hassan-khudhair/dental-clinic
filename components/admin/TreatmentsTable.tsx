@@ -94,13 +94,13 @@ export default function TreatmentsTable({ treatments }: { treatments: Treatment[
           <form onSubmit={handleAdd} className="w-full max-w-md rounded-2xl bg-white p-6 shadow-xl">
             <h3 className="mb-4 text-base font-bold text-clinic-dark">إضافة علاج جديد</h3>
             <div className="space-y-3">
-              <select name="patientId" value={form.patientId} onChange={handleChange} required className="w-full rounded-lg border border-gray-200 px-3 py-2.5 text-sm outline-none focus:border-teal">
+              <select name="patientId" value={form.patientId} onChange={handleChange} required className="w-full rounded-lg border border-gray-200 text-gray-600 px-3 py-2.5 text-sm outline-none focus:border-teal">
                 <option value="">اختر المريض</option>
                 {patients.map((p) => <option key={p.id} value={p.id}>{p.fullName}</option>)}
               </select>
-              <input name="procedureName" value={form.procedureName} onChange={handleChange} required placeholder="اسم الإجراء" className="w-full rounded-lg border border-gray-200 px-3 py-2.5 text-sm outline-none focus:border-teal" />
-              <input name="treatmentDate" value={form.treatmentDate} onChange={handleChange} required type="date" className="w-full rounded-lg border border-gray-200 px-3 py-2.5 text-sm outline-none focus:border-teal" />
-              <textarea name="doctorNotes" value={form.doctorNotes} onChange={handleChange} rows={3} placeholder="ملاحظات الطبيب (اختياري)" className="w-full resize-none rounded-lg border border-gray-200 px-3 py-2.5 text-sm outline-none focus:border-teal" />
+              <input name="procedureName" value={form.procedureName} onChange={handleChange} required placeholder="اسم الإجراء" className="w-full rounded-lg border border-gray-200 text-gray-600 px-3 py-2.5 text-sm outline-none focus:border-teal" />
+              <input name="treatmentDate" value={form.treatmentDate} onChange={handleChange} required type="date" className="w-full rounded-lg border border-gray-200 text-gray-600 px-3 py-2.5 text-sm outline-none focus:border-teal" />
+              <textarea name="doctorNotes" value={form.doctorNotes} onChange={handleChange} rows={3} placeholder="ملاحظات الطبيب (اختياري)" className="w-full resize-none rounded-lg border border-gray-200 text-gray-600 px-3 py-2.5 text-sm outline-none focus:border-teal" />
             </div>
             <div className="mt-4 flex gap-3">
               <button type="submit" disabled={create.isPending} className="flex-1 rounded-lg bg-teal py-2.5 text-sm font-bold text-white hover:bg-teal-light disabled:opacity-60">

@@ -7,7 +7,7 @@ const CARDS = [
   {
     icon: '📍',
     label: 'العنوان',
-    value: 'البصرة — الزبير',
+    value: 'ذي قار — الناصرية - مقابل مستشفى الأزهر',
     sub: 'العراق',
     href: '#',
     color: 'hover:border-teal/40',
@@ -31,9 +31,9 @@ const CARDS = [
   {
     icon: '📸',
     label: 'إنستغرام',
-    value: '@dr.haider_endo',
+    value: '@dr.haidar.khudhair',
     sub: 'تابعنا',
-    href: 'https://instagram.com/dr.haider_endo',
+    href: 'https://instagram.com/dr.haidar.khudhair',
     color: 'hover:border-purple-400/40',
   },
 ];
@@ -117,7 +117,7 @@ export default function Contact() {
           transition={{ duration: 0.7, delay: 0.7 }}
           className="mt-20 border-t border-white/8 pt-8 text-center text-sm text-white/25"
         >
-          © {new Date().getFullYear()} عيادة د. حيدر لطب الأسنان — البصرة، العراق
+          © {new Date().getFullYear()} عيادة د. حيدر لطب الأسنان — ذي قار، العراق
         </motion.div>
       </div>
     </section>

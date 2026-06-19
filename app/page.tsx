@@ -7,9 +7,9 @@ import Contact from '@/components/public/Contact';
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'د. حيدر | متخصص علاج جذور الأسنان — البصرة',
+    absolute: 'د. حيدر | متخصص علاج جذور الأسنان — ذي قار الناصرية',
   },
-  description: 'عيادة د. حيدر المتخصصة في علاج جذور الأسنان واستخراج الملفات المكسورة والتيجان التركيبية في البصرة',
+  description: 'عيادة د. حيدر المتخصصة في علاج جذور الأسنان واستخراج الملفات المكسورة والتيجان التركيبية في ذي قار الناصرية',
 };
 
 export default function LandingPage() {
