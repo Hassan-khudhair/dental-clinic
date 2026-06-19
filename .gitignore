@@ -16,8 +16,6 @@ build/
 .env.test.local
 .env.production.local
 
-# Prisma generated client
-apps/api/prisma/migrations/*.sql
 
 # Logs
 *.log
