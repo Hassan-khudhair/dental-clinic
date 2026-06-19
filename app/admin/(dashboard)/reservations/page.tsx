@@ -35,7 +35,7 @@ export default function ReservationsPage() {
             onClick={() => setActiveFilter(f.value)}
             className={`rounded-full px-4 py-1.5 text-sm font-semibold transition-colors ${
               activeFilter === f.value
-                ? 'bg-teal text-white'
+                ? 'bg-teal text-gray-200'
                 : 'border border-gray-200 bg-white text-clinic-muted hover:border-teal hover:text-teal'
             }`}
           >

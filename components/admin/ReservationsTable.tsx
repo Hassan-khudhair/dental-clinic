@@ -59,7 +59,7 @@ export default function ReservationsTable({ reservations }: { reservations: Rese
                     onChange={(e) =>
                       update.mutate({ id: r.id, status: e.target.value as ReservationStatus })
                     }
-                    className="rounded-lg border border-gray-200 bg-white px-2 py-1 text-xs outline-none focus:border-teal"
+                    className="rounded-lg border border-gray-200 text-gray-600 bg-white px-2 py-1 text-xs outline-none focus:border-teal"
                   >
                     {STATUSES.map((s) => (
                       <option key={s} value={s}>{STATUS_LABELS[s]}</option>

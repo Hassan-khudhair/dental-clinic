@@ -47,7 +47,7 @@ export default function LoginPage() {
               onChange={(e) => setEmail(e.target.value)}
               required
               autoComplete="email"
-              className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-right focus:border-teal focus:outline-none focus:ring-2 focus:ring-teal/20"
+              className="w-full rounded-lg border border-gray-300 text-gray-600 px-4 py-2.5 text-right focus:border-teal focus:outline-none focus:ring-2 focus:ring-teal/20"
               placeholder="admin@clinic.com"
             />
           </div>
@@ -60,7 +60,7 @@ export default function LoginPage() {
               onChange={(e) => setPassword(e.target.value)}
               required
               autoComplete="current-password"
-              className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-right focus:border-teal focus:outline-none focus:ring-2 focus:ring-teal/20"
+              className="w-full rounded-lg border border-gray-300 text-gray-600 px-4 py-2.5 text-right focus:border-teal focus:outline-none focus:ring-2 focus:ring-teal/20"
               placeholder="••••••••"
             />
           </div>
